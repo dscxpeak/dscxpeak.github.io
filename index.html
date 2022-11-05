@@ -1,91 +1,180 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="stylesheet.css" rel="stylesheet">
 
     <title>DSC x Peak Datathon</title>
-  </head>
-  <body style="background-image: url('bg.png');  background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
-    
+</head>
+
+<body
+    style="background-image: url('bg.png');  background-repeat: no-repeat; background-attachment: fixed;background-size: cover;">
+
     <nav class="navbar fixed-top navbar-expand-lg bg-light navbar-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">DSC x PEAK</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                  </li>    
-              <li class="nav-item">
-                <a class="nav-link" href="#challenges">Challenges</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#schedule">Schedule</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#resources">Resources</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#FAQ">FAQ</a>
-              </li>
-            </ul>
-          </div>
+            <a class="navbar-brand" href="#">DSC x PEAK</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#challenges">Challenges</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FAQ">FAQ</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </nav>
+    </nav>
 
     <br>
-    
-    <div id="introduction" class="container text-center" >
+
+    <div id="introduction" class="container text-center">
         <h1>DSC x PEAK</h1>
         <h2>Datathon Fall 2022</h2>
         <h4>Are you ready to accept the challenge?</h4>
         <br>
-        <a href="https://nyu.zoom.us/j/99886387885" class="btn btn-primary btn-lg" tabindex="-1" role="button" aria-disabled="true">Click to join the kick off!</a>
+        <a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce" class="btn btn-primary btn-lg" tabindex="-1" role="button"
+            aria-disabled="true">Click here for access to the dataset!</a>
     </div>
-    
+
     <div id="about" class="container text-center">
         <h2>About the Event</h2>
         <div class="row">
             <div class="col">
-                <p>Since its inception in 2020, the Data Science Club at NYU has been committed to providing opportunities for the student body. Our Datathon is one of our capstone events, bringing together hundreds of students to work with unique datasets and apply their skills to real world problems. This year, we have the honor of working with Peak! We look forward to the challenges they will bring to the table!</p>
+                <p>Since its inception in 2020, the Data Science Club at NYU has been committed to providing
+                    opportunities for the student body. Our Datathon is one of our capstone events, bringing together
+                    hundreds of students to work with unique datasets and apply their skills to real world problems.
+                    This year, we have the honor of working with Peak! We look forward to the challenges they will bring
+                    to the table!</p>
             </div>
         </div>
-        
+
     </div>
 
     <br>
 
-    <div id="challenges" class="container text-center">
-        <h2>Challenges</h2>
+    <div id="challenges" class="container">
+        <h2 class=" text-center">Challenges</h2>
         <br>
+        <p>Olist is an e-commerce marketplace integrator, connecting small businesses from all over Brazil to different
+            customers. The businesses are able to sell their products through the Olist Store and ship them directly to
+            the customers using Olist logistics partners. A wide range of products are sold by Olist, with customers
+            having very different preferences (e.g. clothing vs flowers vs baths.</p>
+        <p>This is real commercial data from between 2016 and 2018. It contains 100k orders. It has been anonymized, and
+            references to the companies and partners in the review text have been replaced with the names of Game of
+            Thrones great houses. It is publicly available on <a
+                href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">Kaggle</a>.</p>
+
         <div class="row">
             <div class="col ">
-                <h3>Challenge 1: Sandbox Challenge</h3>
-                <p>NOT AVAILABLE... Coming soon!</p>
+                <h3>Exploring Customer Preferences: The Sandbox Challenge</h3>
+                <p>Goal: To enhance the shopping experience of customers, retailers need to know as much about customer
+                    preferences and behaviour as possible</p>
+                <ul>
+                    <li>
+                        Data such as transactional, user, and product data can be used to generate insights about
+                        customers
+                    </li>
+                    <li>These insights can enhance the experience of customers and make them more likely to purchase,
+                        increasing sales for the retailer
+                    </li>
+                    <li>They can also allow retailers to explore demand for their different products and see if their
+                        current stock is performing well.
+                    </li>
+                    <li>This may lead to a shift in direction for the business, through focusing on different products
+                        or trends in the future
+                    </li>
+                </ul>
+                <p>During this challenge, you will generate insights for an online retailer based on the data available
+                </p>
+                <ul>
+                    <li>You will present these insights back at the end of the datathon, imagining that you are a data
+                        scientist presenting to a retailer that has hired you to do this work
+                    </li>
+                    <li>This challenge will require great technical and communication skills, with each group analysing
+                        the data and also explaining why your insights are beneficial to the retailer
+                    </li>
+                </ul>
             </div>
             <div class="col ">
-                <h3>Challenge 2: Machine Learning</h3>
-                <p>NOT AVAILABLE... Coming soon!</p>
+                <h3>Recommendation System: The Machine Learning Challenge</h3>
+                <p>Goal: To enhance the shopping experience of customers, product recommenders are often used
+                </p>
+                <ul>
+                    <li>
+                        They take transactional, user, and product data to provide personalised recommendations
+
+                    </li>
+
+                    <li>These allow customers to be targeted with the products that they are most likely to purchase,
+                        increasing sales for the retailer
+
+                    </li>
+                </ul>
+                <p>During this challenge, you will construct a product recommender
+                </p>
+                <ul>
+                    <li>You will generate products that you think should be recommended to a list of customers based on
+                        the data available
+
+                    </li>
+                    <li>You will then report your findings back, imagining that you are a data scientist presenting to a
+                        retailer that has hired you to do this work
+
+                    </li>
+                    <li> This challenge will require great technical and communication skills, with each group
+                        constructing a recommender and also explaining what you have done to a non-technical audience
+                    </li>
+                </ul>
             </div>
             <div class="col ">
                 <h3>Team Work Makes the Dream Work: Team Spirit Challenge</h3>
-                <p>Share your team spirit throughout the event by completing our social activities via Slack/Instagram! We want to see how you're engaging with the event so tag us on your social media platforms (@dscnyu)!</p>
-                
+                <p>Share your team spirit throughout the event by completing our social activities via Slack/Instagram!
+                    We want to see how you're engaging with the event so tag us on your social media platforms
+                    (@dscnyu)!</p>
+                <p>Some of the challenges will include:</p>
+                <ul>
+                    <li> “Do Great.” Team Selfie Challenge</li>
+                    <li> Best Team Slogan Challenge</li>
+                    <li> Stay Hydrated Challenge</li>
+                    <li> Winning the Water Pong Tournament</li>
+                </ul>
             </div>
         </div>
+        <p class="text-center">The details for each problem statement can be further found here:</p>
+        <div class="text-center">
+            <a href="https://docs.google.com/presentation/d/1Q8j6UJAtwUFehp2CgRSinxxzoRFDowY_OYkq-qE4Zl4/edit#slide=id.g1814cf037db_0_1064" class="btn btn-primary btn-lg" tabindex="-1" role="button"
+            aria-disabled="true">Problem Statements</a>
+        </div>
+
+
     </div>
 
     <br>
 
     <div id="schedule" class="container text-center">
         <h2>Schedule</h2>
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=7&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=AGENDA&src=Y19mY2FmMjEyMjRiNGQyNWE2YzA0MzJiYjY4Y2JmNmU0ZWE0MmNkYTQ3YjY2YmJmOGYwYWYzZTBhMTdiM2UzMDc5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F6BF26" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+        <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=7&bgcolor=%23ffffff&ctz=America%2FNew_York&mode=AGENDA&src=Y19mY2FmMjEyMjRiNGQyNWE2YzA0MzJiYjY4Y2JmNmU0ZWE0MmNkYTQ3YjY2YmJmOGYwYWYzZTBhMTdiM2UzMDc5QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23F6BF26"
+            style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <br>
@@ -97,19 +186,33 @@
             <div class="col ">
                 <h3 class="text-center">General Help</h3>
                 <h4>Office Hours</h4>
-                    <ul>
-                        <li><b>Peak:</b> Throughout the event, Peak will be checking in to answer questions about the problem statement, the dataset, and life as a data scientist! Peak support is available in person in room LL1-148, Slack, and via Zoom upon request in the <em>#dsc-x-peak-ask-a-question</em> Slack channel!</li>
-                        <li><b>Graduate Students:</b> A select set of graduate students will be offering their advice throughout the course of the datathon! Feel free to ask for their advice regarding your approach to the problem set, graduate school applications, and more! Graduate student support is available in person in room LL1-148, Slack, and via Zoom!</li>
-                        <li><b>Librarian:</b> Our resident data services specialist Vicky will be available via Slack (<em>#dsc-x-peak-ask-a-question</em>) on Saturday from 2 to 3 pm to guide you through what resources are available to you during the datathon!</li>
-                        <li><b>The Data Science Club:</b>We are here to help you in any way, shape or form. If you have any questions, feel free to reach out to us via Slack, join us in LL1-150 in Bobst, or via Zoom!</li>
-                    </ul>
-                    <p>Zoom Link: <a href="https://nyu.zoom.us/j/93887861265">https://nyu.zoom.us/j/93887861265</a></p>
-                    <p>Slack Link: <a href="https://www.tinyurl.com/dscnyuslack">tinyurl.com/dscnyuslack</a></p>
-                <h4>Spaces Available</h4>
-                <p>If you are attending the datathon, we have reserved several spaces throughout Bobst for your convenience. The rooms are as follows:</p>
                 <ul>
-                    <li>LL150: Our main datathon space - all major events will be held here. Can also be used for teamwork.</li>
-                    <li>LL151: Our secondary space - for if there is an overflow of people in one room. Can also be used for teamwork.</li>
+                    <li><b>Peak:</b> Throughout the event, Peak will be checking in to answer questions about the
+                        problem statement, the dataset, and life as a data scientist! Peak support is available in
+                        person in room LL1-148, Slack, and via Zoom upon request in the
+                        <em>#dsc-x-peak-ask-a-question</em> Slack channel!
+                    </li>
+                    <li><b>Graduate Students:</b> A select set of graduate students will be offering their advice
+                        throughout the course of the datathon! Feel free to ask for their advice regarding your approach
+                        to the problem set, graduate school applications, and more! Graduate student support is
+                        available in person in room LL1-148, Slack, and via Zoom!</li>
+                    <li><b>Librarian:</b> Our resident data services specialist Vicky will be available via Slack
+                        (<em>#dsc-x-peak-ask-a-question</em>) on Saturday from 2 to 3 pm to guide you through what
+                        resources are available to you during the datathon!</li>
+                    <li><b>The Data Science Club:</b>We are here to help you in any way, shape or form. If you have any
+                        questions, feel free to reach out to us via Slack, join us in LL1-150 in Bobst, or via Zoom!
+                    </li>
+                </ul>
+                <p>Zoom Link: <a href="https://nyu.zoom.us/j/93887861265">https://nyu.zoom.us/j/93887861265</a></p>
+                <p>Slack Link: <a href="https://www.tinyurl.com/dscnyuslack">tinyurl.com/dscnyuslack</a></p>
+                <h4>Spaces Available</h4>
+                <p>If you are attending the datathon, we have reserved several spaces throughout Bobst for your
+                    convenience. The rooms are as follows:</p>
+                <ul>
+                    <li>LL150: Our main datathon space - all major events will be held here. Can also be used for
+                        teamwork.</li>
+                    <li>LL151: Our secondary space - for if there is an overflow of people in one room. Can also be used
+                        for teamwork.</li>
                     <li>LL149: Free space to interact with your teammates.</li>
                     <li>LL148: In person office hours will be held in this space!</li>
                     <li>LL147: Free space to interact with your teammates.</li>
@@ -118,16 +221,19 @@
                     <li>LL143: Free space to interact with your teammates.</li>
                 </ul>
                 <h4>Social Media Platforms</h4>
-                    <ul>
-                        <li>Slack: <a href="https://www.tinyurl.com/dscnyuslack">#dsc-x-peak-ask-a-question</a></li>
-                        <li>Instagram: <a href="https://www.instagram.com/dscnyu/">@dscnyu</a></li>
-                        <li>Email/message (via <a href="https://www.tinyurl.com/dscnyuslack">Slack</a>) <a href="mailto:keerthana@nyu.edu">Keerthana Manivasakan</a> or <a href="mailto:fl2211@nyu.edu">Frank Liu</a>.</li>
-                    </ul>
+                <ul>
+                    <li>Slack: <a href="https://www.tinyurl.com/dscnyuslack">#dsc-x-peak-ask-a-question</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/dscnyu/">@dscnyu</a></li>
+                    <li>Email/message (via <a href="https://www.tinyurl.com/dscnyuslack">Slack</a>) <a
+                            href="mailto:keerthana@nyu.edu">Keerthana Manivasakan</a> or <a
+                            href="mailto:fl2211@nyu.edu">Frank Liu</a>.</li>
+                </ul>
             </div>
             <div class="col">
                 <h3 class="text-center">Problem Details/Judging Guidelines</h3>
                 <h4>Problem Statement</h4>
-                <p>Please find the problem statement <a href="">here</a> (not available yet), and the dataset <a href="">here</a> (not available yet).</p>
+                <p>Please find the problem statement <a href="https://docs.google.com/presentation/d/1Q8j6UJAtwUFehp2CgRSinxxzoRFDowY_OYkq-qE4Zl4/edit#slide=id.g1814cf037db_0_1064">here</a>, and the dataset <a
+                        href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">here</a>.</p>
                 <h4>Judging Criteria</h4>
                 <p>Peak is looking to judge your solution in the following aspects:</p>
                 <ul>
@@ -146,7 +252,8 @@
                         <li>Creating figures that are suitable for the audience and are easy to understand</li>
                     </ul>
                 </ul>
-                <p>For more information, view the presentation <a href="">here</a> (not available yet) or the Zoom recording <a href="">here</a> (not available yet).</p>
+                <p>For more information, view the presentation <a href="">here</a> (not available yet) or the Zoom
+                    recording <a href="">here</a> (not available yet).</p>
                 <h4>Submission Details</h4>
                 <p>You are required to submit the following:</p>
                 <ul>
@@ -160,72 +267,126 @@
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingNine">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                            Datathon Related Recordings
-                          </button>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseNine" aria-expanded="false"
+                                aria-controls="flush-collapseNine">
+                                Datathon Related Recordings
+                            </button>
                         </h2>
-                        <div id="flush-collapseNine" class="accordion-collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
-                          <div class="accordion-body">
-                              <ul>
-                                  <li><a href="https://nyu.zoom.us/rec/play/XAn1tX8hkQmmJnKsDBZDpvY7gWEl7WU4-uVgMac23AlGtdOyR5d2nqrIGQ2L3p2BouUKw5t_GGxO43oY.qlen6jf_M_NTTX9l?autoplay=true&continueMode=true&startTime=1667334096000">Fireside Chat with Peak AI</a>: Join us as Simon Spavound talks to us about his life as a data scientist at Peak AI!</li>
-                                  <li><a href="https://nyu.zoom.us/rec/play/Bhn6pzwtDkxxbgIB7wdl-VyP1eTnO0MCHAoMvDJqhoybJnI7mbIXKN96YFhdsXahAX_jmNu0puYwA_SW.01cmQMNrJbedp5Te?continueMode=true">Data Analysis</a>: Graduate Student Spriha Jha walks us through several basic data analysis techniques to implement within your very own data science projects! This is a great way to get your feet wet into the world of data science!</li>
-                                  <li><a href="https://nyu.zoom.us/rec/play/V_HDwINBAw1qBQjr2cQTwLtExl9ZTKDbtwOrWcLI-OjQiH1fvlM-mTaRuMAeZqQjH-3abXHpuZuz0xC9.sHzasu1DUn09ih4T?autoplay=true&continueMode=true&startTime=1667592220000">Introduction to ML Workshop</a>: Graduate Student Adeet Patel will walk you through the basic concepts of ML and how to apply it within your own projects!</li>
-                                  <li><a href="">Kick Off - The Problem Statement, Dataset, and Judging Criteria</a>: The datathon begins! This is where you can find information regarding the problem statement, the judging criteria, and the resources available to you! (not available yet)</li>
-                                  <li><a href="">Storytelling with Data</a>: Peak teaches a workshop on how to present data! (not available yet)</li>
-                              </ul>
-                          </div>
+                        <div id="flush-collapseNine" class="accordion-collapse" aria-labelledby="flush-headingNine"
+                            data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a
+                                            href="https://nyu.zoom.us/rec/play/XAn1tX8hkQmmJnKsDBZDpvY7gWEl7WU4-uVgMac23AlGtdOyR5d2nqrIGQ2L3p2BouUKw5t_GGxO43oY.qlen6jf_M_NTTX9l?autoplay=true&continueMode=true&startTime=1667334096000">Fireside
+                                            Chat with Peak AI</a>: Join us as Simon Spavound talks to us about his life
+                                        as a data scientist at Peak AI!</li>
+                                    <li><a
+                                            href="https://nyu.zoom.us/rec/play/Bhn6pzwtDkxxbgIB7wdl-VyP1eTnO0MCHAoMvDJqhoybJnI7mbIXKN96YFhdsXahAX_jmNu0puYwA_SW.01cmQMNrJbedp5Te?continueMode=true">Data
+                                            Analysis</a>: Graduate Student Spriha Jha walks us through several basic
+                                        data analysis techniques to implement within your very own data science
+                                        projects! This is a great way to get your feet wet into the world of data
+                                        science!</li>
+                                    <li><a
+                                            href="https://nyu.zoom.us/rec/play/V_HDwINBAw1qBQjr2cQTwLtExl9ZTKDbtwOrWcLI-OjQiH1fvlM-mTaRuMAeZqQjH-3abXHpuZuz0xC9.sHzasu1DUn09ih4T?autoplay=true&continueMode=true&startTime=1667592220000">Introduction
+                                            to ML Workshop</a>: Graduate Student Adeet Patel will walk you through the
+                                        basic concepts of ML and how to apply it within your own projects!</li>
+                                    <li><a href="">Kick Off - The Problem Statement, Dataset, and Judging Criteria</a>:
+                                        The datathon begins! This is where you can find information regarding the
+                                        problem statement, the judging criteria, and the resources available to you!
+                                        (not available yet)</li>
+                                    <li><a href="">Storytelling with Data</a>: Peak teaches a workshop on how to present
+                                        data! (not available yet)</li>
+                                </ul>
+                            </div>
                         </div>
-                      </div>
-                    <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTen">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                          Technology/Programming Languages
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><a href="https://stream.nyu.edu/media/Collaborating+with+Git+and+GitHub/1_4t0xxmr2">Introduction to GitHub</a>: Research Data Management and Reproducibility Librarian Vicky Rampin offers a crash course on GitHub/Git. Familiarize yourselves with one of the most commonly used platforms for storing, tracking, and collaborating on software projects.</li>
-                                <li><a href="https://guides.nyu.edu/quant/python">Python 101</a>: NYU Libraries guide for learning Python with several learning resources including access to LinkedIn Learning videos and web resources! (Note, if you are having difficulties accessing any of the links, please use an NYU account.)</li>
-                                <li><a href="https://guides.nyu.edu/r">R 101</a>: NYU Libraries guide for learning R with several learning resources including access to LinkedIn Learning videos and web resources! (Note, if you are having difficulties accessing any of the links, please use an NYU account.)</li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                      <h2 class="accordion-header" id="flush-headingSeven">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                          Data Analysis
-                        </button>
-                      </h2>
-                      <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            <ul>
-                                <li><a href="https://nyu.zoom.us/rec/play/Bhn6pzwtDkxxbgIB7wdl-VyP1eTnO0MCHAoMvDJqhoybJnI7mbIXKN96YFhdsXahAX_jmNu0puYwA_SW.01cmQMNrJbedp5Te?continueMode=true">Data Analysis</a>: Graduate Student Spriha Jha walks us through several basic data analysis techniques to implement within your very own data science projects! This is a great way to get your feet wet into the world of data science!</li>
-                                <li><a href="https://nyu.zoom.us/rec/play/RY6I8qOWruP0c4QPs4drKmuovt8QTCyBZOVg2YerDVOThIFaqm2IpoNeioeulvNpCTD0UdlyCdYblHb_.5c5HgSV4HqlJV-h1">Hypothesis Testing</a>: Professor Pascal Wallisch talks about building a hypothesis and testing your hypothesis with different methods.</li>
-                              </ul>
-                        </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingEight">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                          Machine Learning
+                        <h2 class="accordion-header" id="flush-headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTen" aria-expanded="false"
+                                aria-controls="flush-collapseTen">
+                                Technology/Programming Languages
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTen" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li><a
+                                            href="https://stream.nyu.edu/media/Collaborating+with+Git+and+GitHub/1_4t0xxmr2">Introduction
+                                            to GitHub</a>: Research Data Management and Reproducibility Librarian Vicky
+                                        Rampin offers a crash course on GitHub/Git. Familiarize yourselves with one of
+                                        the most commonly used platforms for storing, tracking, and collaborating on
+                                        software projects.</li>
+                                    <li><a href="https://guides.nyu.edu/quant/python">Python 101</a>: NYU Libraries
+                                        guide for learning Python with several learning resources including access to
+                                        LinkedIn Learning videos and web resources! (Note, if you are having
+                                        difficulties accessing any of the links, please use an NYU account.)</li>
+                                    <li><a href="https://guides.nyu.edu/r">R 101</a>: NYU Libraries guide for learning R
+                                        with several learning resources including access to LinkedIn Learning videos and
+                                        web resources! (Note, if you are having difficulties accessing any of the links,
+                                        please use an NYU account.)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="accordion-header" id="flush-headingSeven">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                            aria-controls="flush-collapseSeven">
+                            Data Analysis
                         </button>
-                      </h2>
-                      <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                    </h2>
+                    <div id="flush-collapseSeven" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <ul>
-                                <li><a href="https://nyu.zoom.us/rec/play/V_HDwINBAw1qBQjr2cQTwLtExl9ZTKDbtwOrWcLI-OjQiH1fvlM-mTaRuMAeZqQjH-3abXHpuZuz0xC9.sHzasu1DUn09ih4T?autoplay=true&continueMode=true&startTime=1667592220000">Introduction to ML Workshop</a>: Graduate Student Adeet Patel will walk you through the basic concepts of ML and how to apply it within your own projects!</li>
-                                <li><a href="https://stream.nyu.edu/playlist/details/1_mwe79phm/categoryId/205637133">Introduction to Machine Learning</a>: An introduction to machine learning by Professor He He! Lecture 1b offers some basic insight into understanding what machine learning is and how you can apply it to specific problems.</li>
-                                <li><a href="https://nyu.zoom.us/rec/play/d7lngMvrUIHnsOZQ5-cvkk58bAd8HkOU_-BZ--o-lE1DVM-ttEDU7u1lN1c-W-VgERHNHlse1549XPY.UamJTnhlzobmrGZm">Introduction to Clustering</a>: This lecture by Professor Pascal Wallisch covers basic clustering methods that can be used for customer segmentation.</li>
+                                <li><a
+                                        href="https://nyu.zoom.us/rec/play/Bhn6pzwtDkxxbgIB7wdl-VyP1eTnO0MCHAoMvDJqhoybJnI7mbIXKN96YFhdsXahAX_jmNu0puYwA_SW.01cmQMNrJbedp5Te?continueMode=true">Data
+                                        Analysis</a>: Graduate Student Spriha Jha walks us through several basic data
+                                    analysis techniques to implement within your very own data science projects! This is
+                                    a great way to get your feet wet into the world of data science!</li>
+                                <li><a
+                                        href="https://nyu.zoom.us/rec/play/RY6I8qOWruP0c4QPs4drKmuovt8QTCyBZOVg2YerDVOThIFaqm2IpoNeioeulvNpCTD0UdlyCdYblHb_.5c5HgSV4HqlJV-h1">Hypothesis
+                                        Testing</a>: Professor Pascal Wallisch talks about building a hypothesis and
+                                    testing your hypothesis with different methods.</li>
                             </ul>
                         </div>
-                      </div>
                     </div>
-                    
-                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingEight">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight" aria-expanded="false"
+                            aria-controls="flush-collapseEight">
+                            Machine Learning
+                        </button>
+                    </h2>
+                    <div id="flush-collapseEight" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li><a
+                                        href="https://nyu.zoom.us/rec/play/V_HDwINBAw1qBQjr2cQTwLtExl9ZTKDbtwOrWcLI-OjQiH1fvlM-mTaRuMAeZqQjH-3abXHpuZuz0xC9.sHzasu1DUn09ih4T?autoplay=true&continueMode=true&startTime=1667592220000">Introduction
+                                        to ML Workshop</a>: Graduate Student Adeet Patel will walk you through the basic
+                                    concepts of ML and how to apply it within your own projects!</li>
+                                <li><a href="https://stream.nyu.edu/playlist/details/1_mwe79phm/categoryId/205637133">Introduction
+                                        to Machine Learning</a>: An introduction to machine learning by Professor He He!
+                                    Lecture 1b offers some basic insight into understanding what machine learning is and
+                                    how you can apply it to specific problems.</li>
+                                <li><a
+                                        href="https://nyu.zoom.us/rec/play/d7lngMvrUIHnsOZQ5-cvkk58bAd8HkOU_-BZ--o-lE1DVM-ttEDU7u1lN1c-W-VgERHNHlse1549XPY.UamJTnhlzobmrGZm">Introduction
+                                        to Clustering</a>: This lecture by Professor Pascal Wallisch covers basic
+                                    clustering methods that can be used for customer segmentation.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
+    </div>
     </div>
 
     <br>
@@ -237,87 +398,121 @@
             <div class="col ">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Where do I even begin? I'm a data science noob :(
-                        </button>
-                      </h2>
-                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Please see our resources section! It includes a comprehensive list of resources to help you begin. If you are still struggling, feel free to reach out to our support staff via Zoom or Bobst LL148/150 to get started! We can help to direct you to the pertinent resources or lend an ear to walk through your project ideas!
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Where do I even begin? I'm a data science noob :(
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Please see our resources section! It includes a comprehensive list of resources to help
+                                you begin. If you are still struggling, feel free to reach out to our support staff via
+                                Zoom or Bobst LL148/150 to get started! We can help to direct you to the pertinent
+                                resources or lend an ear to walk through your project ideas!
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Can I still participate even if I'm virtual?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Glad you asked! If you are unable to attend in person for whatever reason, all main conference events will be recorded and we have support staff available for you at all times. Please review the schedule/resources for relevant Zoom links!
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Can I still participate even if I'm virtual?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Glad you asked! If you are unable to attend in person for whatever reason, all main
+                                conference events will be recorded and we have support staff available for you at all
+                                times. Please review the schedule/resources for relevant Zoom links!
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          What's happening next and where?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            All event details can be found in the <a href="#schedule">schedule</a> section of the webpage. It includes the Zoom links and the room number the events will be hosted in. We will also be posting announcements via Slack, so make sure to join if you haven't already!
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree" aria-expanded="false"
+                                aria-controls="flush-collapseThree">
+                                What's happening next and where?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                All event details can be found in the <a href="#schedule">schedule</a> section of the
+                                webpage. It includes the Zoom links and the room number the events will be hosted in. We
+                                will also be posting announcements via Slack, so make sure to join if you haven't
+                                already!
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col ">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                          When is the datathon happening and do I have to stay for the full 36 hours?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            The datathon will be taking place from 9:30 AM on November 5th to 9:30 PM on November 6th. You are NOT required to be coding for all 36 hours - in fact we HIGHLY recomend getting some rest before recording your presentations! Sometimes a good night of sleep will help to get the gears turning after a rough first day.
+                        <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFour" aria-expanded="false"
+                                aria-controls="flush-collapseFour">
+                                When is the datathon happening and do I have to stay for the full 36 hours?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                The datathon will be taking place from 9:30 AM on November 5th to 9:30 PM on November
+                                6th. You are NOT required to be coding for all 36 hours - in fact we HIGHLY recomend
+                                getting some rest before recording your presentations! Sometimes a good night of sleep
+                                will help to get the gears turning after a rough first day.
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                          How do I submit?
-                        </button>
-                      </h2>
-                      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Details will be released at 9:00 AM on SUNDAY.
+                        <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseFive" aria-expanded="false"
+                                aria-controls="flush-collapseFive">
+                                How do I submit?
+                            </button>
+                        </h2>
+                        <div id="flush-collapseFive" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Details will be released at 9:00 AM on SUNDAY.
+                            </div>
                         </div>
-                      </div>
                     </div>
                     <div class="accordion-item">
-                      <h2 class="accordion-header" id="flush-headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                          Help! I have more questions :(
-                        </button>
-                      </h2>
-                      <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body">
-                            Please feel free to contact us via Instagram (<a href="https://www.instagram.com/dscnyu/">@dscnyu</a>) or message us on <a href="https://www.tinyurl.com/dscnyuslack">Slack</a>!
+                        <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseSix" aria-expanded="false"
+                                aria-controls="flush-collapseSix">
+                                Help! I have more questions :(
+                            </button>
+                        </h2>
+                        <div id="flush-collapseSix" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                Please feel free to contact us via Instagram (<a
+                                    href="https://www.instagram.com/dscnyu/">@dscnyu</a>) or message us on <a
+                                    href="https://www.tinyurl.com/dscnyuslack">Slack</a>!
+                            </div>
                         </div>
-                      </div>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
     <br>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 
-  </body>
+</body>
+
 </html>
